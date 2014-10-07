@@ -1,0 +1,191 @@
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "css/bootstrap.css"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/css/bootstrap.css
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "images/iconos/pedidosOnline.ico"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/iconos/p...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/images/iconos/pedidosOnline.ico
+---
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "js/fancybox/jquery.fancybox.css"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/fancybox/jqu...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/js/fancybox/jquery.fancybox.css
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "css/normalize.css"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/normalize.c...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/css/normalize.css
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "css/general.css"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/general.css')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/css/general.css
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "js/fancybox/jquery.fancybox.js"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/fancybox/jqu...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/js/fancybox/jquery.fancybox.js
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "images/twitter.png"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/twitter....')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/images/twitter.png
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "js/bootstrap.js"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/js/bootstrap.js
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "images/facebook.png"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/facebook...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/images/facebook.png
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "js/fancybox/jquery.fancybox.js"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/fancybox/jqu...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/js/fancybox/jquery.fancybox.js
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "images/iconos/pedidosOnline.ico"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/iconos/p...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/images/iconos/pedidosOnline.ico
+---
+2014/10/07 16:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "images" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/cab...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/site/images/cabecera_EN.png
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 16:05:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "images" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/cab...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/site/images/cabecera_EN.png
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 16:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "images" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/cab...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/site/images/cabecera_EN.png
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/10/07 16:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "images" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ima...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/site/images/images/cabecera_EN.png
+HTTP_REFERER=http://localhost/web_interna/site/images/cabecera_EN.png
+---
+2014/10/07 16:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "images/iconos/pedidosOnline.ico"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/iconos/p...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/images/iconos/pedidosOnline.ico
+---
+2014/10/07 16:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "images/iconos/pedidosOnline.ico"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/iconos/p...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/images/iconos/pedidosOnline.ico
+---
+2014/10/07 16:34:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "images/iconos/pedidosOnline.ico"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/iconos/p...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/images/iconos/pedidosOnline.ico
+---
+2014/10/07 16:34:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "images/iconos/pedidosOnline.ico"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/iconos/p...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/images/iconos/pedidosOnline.ico
+---
+2014/10/07 16:43:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "fonts/glyphicons-halflings-regular.woff"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/web_interna/css/bootstrap.css
+---
+2014/10/07 16:43:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "fonts/glyphicons-halflings-regular.ttf"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/web_interna/css/bootstrap.css
+---
