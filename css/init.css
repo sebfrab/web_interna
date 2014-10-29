@@ -7,4 +7,89 @@
 */
 
 @import url('../fonts/OpenSans-Regular.ttf');
+@import url('../fonts/OpenSans-Light.ttf');
 
+a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
+a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
+
+header{
+    background-image: url('../images/bg_main.jpg');
+    /* style="background-color: #0d141c;"*/
+}
+
+footer{
+    background-color: #00223f;
+    margin-top: 50px;
+}
+
+.contenido-news{
+    margin-top: 20px;
+}
+
+.contenido-news>div{
+    margin: 2px;
+    background-color: #000;
+    height: 60px;
+}
+
+#fecha{
+    background-image: url('../images/img.jpg');
+}
+
+.departamento{
+    border: 1px solid #001223;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 2px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+    
+.departamento>.titulo{
+    background-image: url('../images/bg_main.jpg');
+    margin: 0px;
+    padding: 7px;
+    color: #fff;
+}
+
+.departamento>.titulo>img{
+    margin-right: 5px;
+}
+
+.departamento>.subtitulo{
+    color:#cd0a0a;
+    padding-left: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color:#E6E6E6;
+}
+
+.departamento>ul>li>a{
+    color: #2a6496;
+}
+
+.departamento>ul>li{
+    min-height: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.1;
+}
+
+.item{
+    padding: 2px 1px 2px 1px;
+    margin: 10px;
+}
+
+#slider{
+    background-image: url('../images/escuela.jpg');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-secundario{
+    margin-top: 80px;
+}

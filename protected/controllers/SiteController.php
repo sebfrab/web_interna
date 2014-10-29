@@ -27,9 +27,26 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$Criteria = new CDbCriteria();
+                $Criteria->with=array(
+                    'categoria',
+                    'categoria.subcategoria',
+                );
+                $Criteria->condition = "t.columna = 1";
+                $Criteria->order = 't.columna, t.orden, categoria.orden, subcategoria.orden  ASC  ';
+                $column1 = Departamento::model()->findAll($Criteria);
+            
+                $Criteria->condition = "t.columna = 2";
+                $column2 = Departamento::model()->findAll($Criteria);
+                
+                $Criteria->condition = "t.columna = 3";
+                $column3 = Departamento::model()->findAll($Criteria);
+                
+		$this->render('index', array(
+                                    'column1' => $column1,
+                                    'column2' => $column2,
+                                    'column3' => $column3
+                              ));
 	}
 
 	/**
@@ -77,6 +94,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+                $this->layout='//layouts/column1';
 		$model=new LoginForm;
 
 		// if it is ajax validation request
