@@ -10,12 +10,14 @@
  * @property string $nombre
  * @property string $orden
  * @property string $url
+ * @property integer $privada
  */
 class Subcategoria extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
+        public static $privacidad=array(0=>'No', 1=>'Si');
 	public function tableName()
 	{
 		return 'subcategoria';
@@ -30,12 +32,13 @@ class Subcategoria extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('tipo_idtipo, categoria_idcategoria, nombre, orden', 'required'),
+			array('privada', 'numerical', 'integerOnly'=>true),
 			array('tipo_idtipo, categoria_idcategoria, orden', 'length', 'max'=>10),
 			array('nombre', 'length', 'max'=>75),
 			array('url', 'length', 'max'=>250),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idsubcategoria, tipo_idtipo, categoria_idcategoria, nombre, orden, url', 'safe', 'on'=>'search'),
+			array('idsubcategoria, tipo_idtipo, categoria_idcategoria, nombre, orden, url, privada', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,6 +68,7 @@ class Subcategoria extends CActiveRecord
 			'nombre' => 'Nombre',
 			'orden' => 'Orden',
 			'url' => 'Url',
+			'privada' => 'Privada',
 		);
 	}
 
@@ -92,6 +96,7 @@ class Subcategoria extends CActiveRecord
 		$criteria->compare('nombre',$this->nombre,true);
 		$criteria->compare('orden',$this->orden,true);
 		$criteria->compare('url',$this->url,true);
+		$criteria->compare('privada',$this->privada);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -117,4 +122,19 @@ class Subcategoria extends CActiveRecord
             }
             return CHtml::listData(Subcategoria::model()->findAll(),'idsubcategoria','nombre');
         }
+        
+        public static function getPrivacidad($key=null){
+            if($key!==null)
+                return self::$privacidad[$key];
+            return self::$privacidad;
+        }
+        
+        /*protected function afterSave()
+        {
+            parent::afterSave();
+            if($this->isNewRecord)
+            {
+                $auth=Yii::app()->authManager;
+            }
+        }*/
 }

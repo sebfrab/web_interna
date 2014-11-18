@@ -3707,3 +3707,1527 @@ Stack trace:
 REQUEST_URI=/web_interna/site/support
 HTTP_REFERER=http://localhost/web_interna/publicacion/create/1
 ---
+2014/10/29 12:25:59 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (64)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/10/29 12:30:17 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (64)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/10/29 12:31:29 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (64)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/10/29 12:31:41 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (64)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/10/29 12:31:49 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (64)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/10/30 09:23:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "support" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('support')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('support')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/support')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/site/support
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/05 15:59:04 [error] [exception.CException] exception 'CException' with message 'La propiedad "Publicacion"."extension" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('extension')
+#1 C:\xampp\htdocs\web_interna\protected\models\Publicacion.php(95): CActiveRecord->__get('extension')
+#2 C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php(13): Publicacion->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#7 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#8 [internal function]: SubcategoriaController->actionView('7')
+#9 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/web_interna/subcategoria/7
+HTTP_REFERER=http://localhost/web_interna/subcategoria/update/7
+---
+2014/11/05 15:59:19 [error] [exception.CException] exception 'CException' with message 'La propiedad "Publicacion"."extension" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('extension')
+#1 C:\xampp\htdocs\web_interna\protected\models\Publicacion.php(95): CActiveRecord->__get('extension')
+#2 C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php(13): Publicacion->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#7 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#8 [internal function]: SubcategoriaController->actionView('7')
+#9 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/web_interna/subcategoria/7
+HTTP_REFERER=http://localhost/web_interna/subcategoria/update/7
+---
+2014/11/05 16:00:47 [error] [exception.CException] exception 'CException' with message 'La propiedad "Publicacion"."extension" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('extension')
+#1 C:\xampp\htdocs\web_interna\protected\models\Publicacion.php(95): CActiveRecord->__get('extension')
+#2 C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php(13): Publicacion->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#7 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#8 [internal function]: SubcategoriaController->actionView('8')
+#9 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/web_interna/subcategoria/8
+HTTP_REFERER=http://localhost/web_interna/
+---
+2014/11/06 08:12:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web_interna/subcategoria/1
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/11/06 08:15:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Damn You!, you are not authorized to perform this action.' in C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php:12
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#4 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#5 [internal function]: SubcategoriaController->actionView('7')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/web_interna/subcategoria/7
+---
+2014/11/06 08:16:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Damn You!, you are not authorized to perform this action.' in C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php:12
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#4 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#5 [internal function]: SubcategoriaController->actionView('7')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/web_interna/subcategoria/7
+---
+2014/11/06 08:17:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Damn You!, you are not authorized to perform this action.' in C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php:12
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#4 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#5 [internal function]: SubcategoriaController->actionView('7')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/web_interna/subcategoria/7
+---
+2014/11/06 08:17:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web_interna/subcategoria/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/5
+---
+2014/11/06 08:17:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web_interna/subcategoria/5
+HTTP_REFERER=http://localhost/web_interna/subcategoria/4
+---
+2014/11/06 08:17:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web_interna/subcategoria/5
+HTTP_REFERER=http://localhost/web_interna/subcategoria/4
+---
+2014/11/06 08:18:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php:12
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#4 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#5 [internal function]: SubcategoriaController->actionView('7')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/web_interna/subcategoria/7
+HTTP_REFERER=http://localhost/web_interna/subcategoria/5
+---
+2014/11/06 08:40:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php:12
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#4 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#5 [internal function]: SubcategoriaController->actionView('7')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/web_interna/subcategoria/7
+HTTP_REFERER=http://localhost/web_interna/subcategoria/2
+---
+2014/11/06 15:01:21 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/39 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:157)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/39
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (157)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (166)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:01:25 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/35 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:157)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/35
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (157)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (166)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:02:30 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/30 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:157)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/30
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (157)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (166)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:02:51 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/39 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:157)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/39
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (157)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (166)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:02:54 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/25 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:157)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/25
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (157)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (166)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:03:12 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/39 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:157)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/39
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (157)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (166)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:04:55 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/39 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:157)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/39
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (157)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (166)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:04:58 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/28.docx (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:157)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/28
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (157)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (166)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:08:10 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/39 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:157)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/39
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (157)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (166)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:18:41 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/32 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:157)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/32
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (157)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (166)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:19:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "support" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('support')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('support')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/support')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/site/support
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/11/06 15:38:08 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'secretaria_direccion_secretaria_escuela ' for key 'PRIMARY'. La sentencia SQL ejecutada fue: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+in C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php (134)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/06 15:38:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'secretaria_direccion_secretaria_escuela ' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 C:\xampp\htdocs\yii\framework\web\auth\CDbAuthManager.php(444): CDbCommand->insert('AuthItem', Array)
+#2 C:\xampp\htdocs\yii\framework\web\auth\CAuthManager.php(72): CDbAuthManager->createAuthItem('secretaria_dire...', 2, 'Rol para el sec...', '', NULL)
+#3 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(134): CAuthManager->createRole('secretaria_dire...', 'Rol para el sec...', '')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SubcategoriaController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/web_interna/subcategoria
+---
+2014/11/06 15:42:30 [error] [exception.CDbException] exception 'CDbException' with message 'La relación "subcategoria" no se encuentra definida en la clase active record "Departamento".' in C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'subcategoria')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Departamento), Array)
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\main.php(43): CActiveRecord->findAll(Object(CDbCriteria))
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#10 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\column1.php(11): CBaseController->endContent()
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#15 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#17 C:\xampp\htdocs\web_interna\protected\controllers\SiteController.php(49): CController->render('index', Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/web_interna/
+HTTP_REFERER=http://localhost/web_interna/subcategoria/admin
+---
+2014/11/06 15:42:31 [error] [exception.CDbException] exception 'CDbException' with message 'La relación "subcategoria" no se encuentra definida en la clase active record "Departamento".' in C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'subcategoria')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Departamento), Array)
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\main.php(43): CActiveRecord->findAll(Object(CDbCriteria))
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#10 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\column1.php(11): CBaseController->endContent()
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#15 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#17 C:\xampp\htdocs\web_interna\protected\controllers\SiteController.php(49): CController->render('index', Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/web_interna/
+HTTP_REFERER=http://localhost/web_interna/subcategoria/admin
+---
+2014/11/10 08:04:01 [error] [php] Object of class Departamento could not be converted to string (C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\main.php:45)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\column1.php(11): SiteController->endContent()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\web_interna\protected\controllers\SiteController.php(49): SiteController->render()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/
+in C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\main.php (45)
+in C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\column1.php (11)
+in C:\xampp\htdocs\web_interna\protected\controllers\SiteController.php (49)
+2014/11/10 08:47:49 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'mantencion_General' for key 'PRIMARY'. La sentencia SQL ejecutada fue: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+in C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\main.php (49)
+in C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\column1.php (11)
+in C:\xampp\htdocs\web_interna\protected\controllers\SiteController.php (49)
+2014/11/10 08:47:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'mantencion_General' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 C:\xampp\htdocs\yii\framework\web\auth\CDbAuthManager.php(444): CDbCommand->insert('AuthItem', Array)
+#2 C:\xampp\htdocs\yii\framework\web\auth\CAuthManager.php(86): CDbAuthManager->createAuthItem('mantencion_Gene...', 1, '', NULL, NULL)
+#3 C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\main.php(49): CAuthManager->createTask('mantencion_Gene...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\column1.php(11): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\web_interna\protected\controllers\SiteController.php(49): CController->render('index', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/web_interna/
+---
+2014/11/10 08:52:43 [error] [exception.CException] exception 'CException' with message 'No existe "mantencion_ Dirección - Subdirección _Secretaria escuela " ni "create_Secretaria escuela _Relación Oficiales con Funciones y Puestos"' in C:\xampp\htdocs\yii\framework\web\auth\CDbAuthManager.php:170
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAuthItem.php(193): CDbAuthManager->addItemChild('mantencion_ Dir...', 'create_Secretar...')
+#1 C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\main.php(59): CAuthItem->addChild('create_Secretar...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#6 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\web_interna\themes\bootstrap\views\layouts\column1.php(11): CBaseController->endContent()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\web_interna\protected\controllers\SiteController.php(49): CController->render('index', Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/web_interna/
+---
+2014/11/10 09:01:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "usuario"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web_interna/usuario
+---
+2014/11/10 09:06:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web_interna/usuario/admin
+HTTP_REFERER=http://localhost/web_interna/usuario/create
+---
+2014/11/10 09:07:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web_interna/usuario/admin
+---
+2014/11/10 09:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "assign" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assign')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assign')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/assign')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/usuario/assign/1?item=secretaria_+Direcci%C3%B3n+-+Subdirecci%C3%B3n+
+HTTP_REFERER=http://localhost/web_interna/usuario/1
+---
+2014/11/10 10:00:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assign')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/assign')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web_interna/usuario/assign/1?item=secretaria_+Direcci%C3%B3n+-+Subdirecci%C3%B3n+
+HTTP_REFERER=http://localhost/web_interna/usuario/1
+---
+2014/11/10 11:24:58 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'oficial_-2' for key 'PRIMARY'. La sentencia SQL ejecutada fue: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in C:\xampp\htdocs\web_interna\protected\models\Usuario.php (139)
+in C:\xampp\htdocs\web_interna\protected\models\Usuario.php (182)
+in C:\xampp\htdocs\web_interna\protected\controllers\UsuarioController.php (65)
+2014/11/10 11:24:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'oficial_-2' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 C:\xampp\htdocs\yii\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('AuthAssignment', Array)
+#2 C:\xampp\htdocs\web_interna\protected\models\Usuario.php(139): CDbAuthManager->assign('oficial_', '2')
+#3 C:\xampp\htdocs\web_interna\protected\models\Usuario.php(182): Usuario::assign('oficial_', '2')
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1097): Usuario->afterSave()
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#6 C:\xampp\htdocs\web_interna\protected\controllers\UsuarioController.php(65): CActiveRecord->save()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): UsuarioController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/create')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/web_interna/usuario/create
+HTTP_REFERER=http://localhost/web_interna/usuario/create
+---
+2014/11/11 10:43:46 [error] [exception.CException] exception 'CException' with message 'La propiedad "Subcategoria"."privada" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('privada')
+#1 C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php(10): CActiveRecord->__get('privada')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#7 [internal function]: SubcategoriaController->actionView('1')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/web_interna/subcategoria/1
+HTTP_REFERER=http://localhost/web_interna/
+---
+2014/11/11 11:16:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:65
+Stack trace:
+#0 [internal function]: PublicacionController->actionCreate('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/cre...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/create/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/11 11:17:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:65
+Stack trace:
+#0 [internal function]: PublicacionController->actionCreate('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/cre...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/create/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/11 11:17:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:65
+Stack trace:
+#0 [internal function]: PublicacionController->actionCreate('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/cre...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/create/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/11 11:17:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:65
+Stack trace:
+#0 [internal function]: PublicacionController->actionCreate('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/cre...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/create/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/11 11:17:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Reglamento Orgánico de la Escuela' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:65
+Stack trace:
+#0 [internal function]: PublicacionController->actionCreate('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/cre...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/create/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/11 11:18:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Secretaria escuela ' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:65
+Stack trace:
+#0 [internal function]: PublicacionController->actionCreate('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/cre...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/create/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/11 11:18:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Secretaria escuela ' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:65
+Stack trace:
+#0 [internal function]: PublicacionController->actionCreate('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/cre...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/create/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/11 11:19:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:65
+Stack trace:
+#0 [internal function]: PublicacionController->actionCreate('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/cre...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/create/1
+---
+2014/11/11 11:22:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/view')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web_interna/usuario/2
+HTTP_REFERER=http://localhost/web_interna/usuario/admin
+---
+2014/11/11 11:22:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web_interna/usuario/admin
+HTTP_REFERER=http://localhost/web_interna/usuario/update/1
+---
+2014/11/11 11:24:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php:13
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#4 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#5 [internal function]: SubcategoriaController->actionView('1')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/web_interna/subcategoria/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/11 11:24:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php:13
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#4 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(64): CController->render('view', Array)
+#5 [internal function]: SubcategoriaController->actionView('1')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/web_interna/subcategoria/1
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/11/11 11:28:01 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/39 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:164)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/39
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (164)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (173)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/11 11:28:20 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/39 (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:164)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/39
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (164)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (173)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/11 11:28:44 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/39.doc (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:164)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/39
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (164)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (173)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/11 11:28:48 [error] [php] filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for C:/xampp/htdocs/web_interna/publicaciones/39.doc (C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:164)
+Stack trace:
+#0 unknown(0): PublicacionController->actionDownload()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PublicacionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PublicacionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PublicacionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PublicacionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/publicacion/download/39
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (164)
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (173)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/11 11:30:44 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/11 11:43:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:174
+Stack trace:
+#0 [internal function]: PublicacionController->actionDownload('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('download')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/dow...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/download/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/11 11:44:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:174
+Stack trace:
+#0 [internal function]: PublicacionController->actionDownload('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('download')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/dow...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/download/1
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/11 11:45:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php:13
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#4 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(68): CController->render('view', Array)
+#5 [internal function]: SubcategoriaController->actionView('1')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/web_interna/subcategoria/1
+HTTP_REFERER=http://localhost/web_interna/
+---
+2014/11/11 11:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "download" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('download')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('download')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/do...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/subcategoria/download/1
+---
+2014/11/11 11:45:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:174
+Stack trace:
+#0 [internal function]: PublicacionController->actionDownload('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('download')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/dow...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/download/1
+---
+2014/11/11 11:45:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php:174
+Stack trace:
+#0 [internal function]: PublicacionController->actionDownload('1')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PublicacionController), Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PublicacionController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('download')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('publicacion/dow...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/web_interna/publicacion/download/1
+---
+2014/11/11 11:50:11 [error] [exception.CException] exception 'CException' with message 'La propiedad "Subcategoria"."create_2" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('create_2')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('create_2')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Subcategoria), 'create_2')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Subcategoria), 'create_2', Array)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\jui\CJuiDatePicker.php(84): CHtml::activeTextField(Object(Subcategoria), 'create_2', Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(167): CJuiDatePicker->run()
+#6 C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php(53): CBaseController->widget('zii.widgets.jui...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(68): CController->render('view', Array)
+#12 [internal function]: SubcategoriaController->actionView('1')
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#25 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/web_interna/subcategoria/1
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/11/11 11:50:23 [error] [exception.CException] exception 'CException' with message 'La propiedad "Subcategoria"."create_2" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('create_2')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('create_2')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Subcategoria), 'create_2')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Subcategoria), 'create_2', Array)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\jui\CJuiDatePicker.php(84): CHtml::activeTextField(Object(Subcategoria), 'create_2', Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(167): CJuiDatePicker->run()
+#6 C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php(53): CBaseController->widget('zii.widgets.jui...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#11 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(68): CController->render('view', Array)
+#12 [internal function]: SubcategoriaController->actionView('1')
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SubcategoriaController), Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SubcategoriaController), Object(ReflectionMethod), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#25 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/web_interna/subcategoria/1
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/11/12 14:16:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "support" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('support')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('support')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/support')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/site/support
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/12 14:27:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "support" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('support')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('support')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/support')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/site/support
+HTTP_REFERER=http://localhost/web_interna/site/index
+---
+2014/11/12 14:42:13 [error] [php] date_format() expects parameter 1 to be DateTime, string given (C:\xampp\htdocs\web_interna\protected\models\Publicacion.php:127)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(183): Publicacion->__isset()
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2135): Publicacion->__isset()
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CDataColumn.php(139): value()
+#3 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#5 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#10 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CGridView->run()
+#12 C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php(76): SubcategoriaController->widget()
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SubcategoriaController->renderInternal()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(869): SubcategoriaController->renderFile()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(782): SubcategoriaController->renderPartial()
+#17 C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php(68): SubcategoriaController->render()
+#18 unknown(0): SubcategoriaController->actionView()
+#19 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#20 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): SubcategoriaController->runAction()
+#23 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#25 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SubcategoriaController->filterAccessControl()
+#26 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#27 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 C:\xampp\htdocs\yii\framework\web\CController.php(265): SubcategoriaController->runActionWithFilters()
+#29 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SubcategoriaController->run()
+#30 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#31 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#32 C:\xampp\htdocs\web_interna\index.php(13): CWebApplication->run()
+REQUEST_URI=/web_interna/subcategoria/1
+in C:\xampp\htdocs\web_interna\protected\models\Publicacion.php (127)
+in C:\xampp\htdocs\web_interna\protected\views\subcategoria\view.php (76)
+in C:\xampp\htdocs\web_interna\protected\controllers\SubcategoriaController.php (68)
+2014/11/13 14:40:40 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:42:36 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (76)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:47:37 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:48:33 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:48:34 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:48:35 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:48:35 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:48:37 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:48:38 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:48:39 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:48:40 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:48:41 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:49:23 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:49:41 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:49:47 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:51:14 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:51:19 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:51:23 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:51:39 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:51:51 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:51:54 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:51:57 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:52:00 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:52:46 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:52:54 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:52:55 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/13 14:52:55 [warning] [application] Error al establecer unsafe al atributo "extension" de "Publicacion".
+in C:\xampp\htdocs\web_interna\protected\controllers\PublicacionController.php (75)
+in C:\xampp\htdocs\web_interna\index.php (13)
+2014/11/17 10:57:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "support" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('support')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('support')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/support')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web_interna/site/support
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---
+2014/11/17 10:57:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('subcategoria/vi...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\web_interna\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/web_interna/subcategoria/view
+HTTP_REFERER=http://localhost/web_interna/subcategoria/1
+---

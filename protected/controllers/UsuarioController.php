@@ -1,6 +1,6 @@
 <?php
 
-class SubcategoriaController extends Controller
+class UsuarioController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -27,12 +27,8 @@ class SubcategoriaController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('view'),
-				'users'=>array('*'),
-			),
-                        array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','create','update','admin','delete'),
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('create','update','admin','delete','index','view','assign'),
 				'expression'=>'Yii::app()->user->checkAccess("Zeus")',
 			),
 			array('deny',  // deny all users
@@ -47,24 +43,8 @@ class SubcategoriaController extends Controller
 	 */
 	public function actionView($id)
 	{
-                $this->layout='//layouts/column2_subcategoria';
-            
-                $modelPublicacion=new Publicacion('search');
-		$modelPublicacion->unsetAttributes();  // clear any default values
-                $modelPublicacion->subcategoria_idsubcategoria = $id;
-                if(isset($_GET['Publicacion'])){
-			$modelPublicacion->attributes=$_GET['Publicacion'];
-                }
-                $model = $this->loadModel($id);
-                $Criteria = new CDbCriteria();
-                $Criteria->condition = "t.categoria_idcategoria = $model->categoria_idcategoria";
-                $subcategoria  = Subcategoria::model()->findAll($Criteria);
-                
-                
 		$this->render('view',array(
-			'model'=>$model,
-                        'modelPublicacion'=>$modelPublicacion,
-                        'subcategoria' =>$subcategoria,
+			'model'=>$this->loadModel($id),
 		));
 	}
 
@@ -74,16 +54,16 @@ class SubcategoriaController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Subcategoria;
+		$model=new Usuario;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Subcategoria']))
+		if(isset($_POST['Usuario']))
 		{
-			$model->attributes=$_POST['Subcategoria'];
+			$model->attributes=$_POST['Usuario'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idsubcategoria));
+				$this->redirect(array('view','id'=>$model->idusuario));
 		}
 
 		$this->render('create',array(
@@ -103,11 +83,11 @@ class SubcategoriaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Subcategoria']))
+		if(isset($_POST['Usuario']))
 		{
-			$model->attributes=$_POST['Subcategoria'];
+			$model->attributes=$_POST['Usuario'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idsubcategoria));
+				$this->redirect(array('view','id'=>$model->idusuario));
 		}
 
 		$this->render('update',array(
@@ -134,17 +114,11 @@ class SubcategoriaController extends Controller
 	 */
 	public function actionIndex()
 	{
-            /*$auth=Yii::app()->authManager;
-            $auth->createRole('secretaria_direccion_secretaria_escuela ', 'Rol para el secretario de la direccion del departamento de dirección', '');
-            
-            $criteria=new CDbCriteria;
-            $criteria->compare('categoria_idcategoria',4,true);
-            
-            $model = Subcategoria::model()->findAll($criteria);
-            foreach($model as $item){
-                
-            }*/
-            $this->redirect(array('admin'));
+		/*$dataProvider=new CActiveDataProvider('Usuario');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));*/
+                $this->redirect(array('admin'));
 	}
 
 	/**
@@ -152,26 +126,31 @@ class SubcategoriaController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Subcategoria('search');
+		$model=new Usuario('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Subcategoria']))
-			$model->attributes=$_GET['Subcategoria'];
+		if(isset($_GET['Usuario']))
+			$model->attributes=$_GET['Usuario'];
 
 		$this->render('admin',array(
 			'model'=>$model,
 		));
 	}
+        
+        public function actionAssign($id){
+            Usuario::assign($_GET["item"], $id);
+            $this->redirect(array("view","id"=>$id));
+        }
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Subcategoria the loaded model
+	 * @return Usuario the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Subcategoria::model()->findByPk($id);
+		$model=Usuario::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -179,11 +158,11 @@ class SubcategoriaController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Subcategoria $model the model to be validated
+	 * @param Usuario $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='subcategoria-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='usuario-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

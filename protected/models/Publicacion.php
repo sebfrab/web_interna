@@ -62,9 +62,9 @@ class Publicacion extends CActiveRecord
 		return array(
 			'idpublicacion' => '#',
 			'usuario_idusuario' => 'Usuario Idusuario',
-			'subcategoria_idsubcategoria' => 'Subcategoria Idsubcategoria',
+			'subcategoria_idsubcategoria' => 'Subcategoria',
 			'nombre' => 'Publicación',
-			'extension' => 'Extension',
+			'extension' => 'Archivo',
 			'create_2' => 'Fecha',
 			'update_2' => 'Update 2',
 		);
@@ -121,5 +121,10 @@ class Publicacion extends CActiveRecord
                 $this->update_2  = date("Y-m-d H:i:s");
 
             return parent::beforeSave();
+        }
+        
+        public function getFecha(){
+            $time = strtotime($this->create_2);
+            return date('d-m-Y H:i:s',$time);;
         }
 }

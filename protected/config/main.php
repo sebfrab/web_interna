@@ -50,6 +50,11 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
+                'authManager'=>array(
+                    'class' => 'CDbAuthManager',
+                    'connectionID' => 'db',
+                    //'defaultRoles'=>array('authenticated', 'guest'),
+                ),
                 /*
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',

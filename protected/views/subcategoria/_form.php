@@ -45,6 +45,12 @@
 		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>250, 'class'=>'form-control')) ?>
 		<?php echo $form->error($model,'url',array('class'=>'alert alert-danger')); ?>
 	</div>
+    
+        <div class="form-group">
+		<?php echo $form->labelEx($model,'privada',array('class'=>'control-label')); ?>
+		<?php echo $form->dropDownList($model,'privada', Subcategoria::getPrivacidad(), array('empty'=>'Seleccione privacidad', 'class'=>'form-control')) ?>
+		<?php echo $form->error($model,'privada',array('class'=>'alert alert-danger')); ?>
+	</div>
 
 	<div class="form-group">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Ingresar' : 'Guardar',array('class'=>'btn btn-primary')); ?>

@@ -22,8 +22,7 @@
 	-moz-border-radius: 30px;
 	border-radius: 30px;
 	background: #869791;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
+	filter: Alpha(Opacity=50);/*IE7 fix*/     
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
@@ -76,4 +75,19 @@
 .owl-item.loading{
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+#owl-demo .item{
+    padding: 5px 0px;
+    display: block;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.owl-wrapper-outer{
+    margin-top: 20px;
 }

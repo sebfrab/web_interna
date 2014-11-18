@@ -9,14 +9,14 @@ class SFIndex extends CWidget{
         parent::init();
         
         $this->columna1($this->column1);
-        echo "<div class=\"col-lg-8\">\n";
+        echo "<div class=\"col-lg-8 col-md-8\">\n";
         $this->columna23($this->column2, $this->column3);
         echo "</div>\n";
         
     }
     
     public function columna1($columna){ 
-        echo "<div class=\"col-lg-4\">\n";
+        echo "<div class=\"col-lg-4 col-md-4\">\n";
         foreach($columna as $item){
             echo "<div class=\"col-lg-12 departamento\">\n";
             echo "<p class=\"titulo\">";
@@ -46,7 +46,7 @@ class SFIndex extends CWidget{
     
     public function columna23($columna2, $columna3){ 
         $this->slider();
-        echo "<div class=\"col-lg-6\">\n";
+        echo "<div class=\"col-lg-6 col-md-6\">\n";
         foreach($columna2 as $item){
             echo "<div class=\"col-lg-12 departamento\">\n";
             echo "<p class=\"titulo\">";
@@ -73,7 +73,7 @@ class SFIndex extends CWidget{
         } 
         echo "</div>\n";
         
-        echo "<div class=\"col-lg-6\">\n";
+        echo "<div class=\"col-lg-6 col-md-6\">\n";
         foreach($columna3 as $item){
             echo "<div class=\"col-lg-12 departamento\">\n";
             echo "<p class=\"titulo\">";
@@ -102,7 +102,7 @@ class SFIndex extends CWidget{
     }
     
     public function slider(){
-        echo "<div class=\"col-lg-12\">";
+        echo "<div class=\"col-lg-12 hidden-sm hidden-xs\">";
         echo "<div id=\"sliderA\" class=\"slider\">";
         echo "<img src=\"".Yii::app()->request->baseUrl."/images/imagen1.jpg\" />";
         echo "<img src=\"".Yii::app()->request->baseUrl."/images/imagen2.jpg\" />";

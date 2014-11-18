@@ -5,6 +5,8 @@
  *
  * The followings are the available columns in table 'usuario':
  * @property string $idusuario
+ * @property string $departamento_iddepartamento
+ * @property string $tipo_usuario_idtipo_usuario
  * @property string $estado_idestado
  * @property string $username
  * @property string $password_2
@@ -15,9 +17,7 @@
  */
 class Usuario extends CActiveRecord
 {
-	/**
-	 * @return string the associated database table name
-	 */
+	public static $generos=array('H'=>'Hombre','M'=>'Mujer');
 	public function tableName()
 	{
 		return 'usuario';
@@ -31,8 +31,8 @@ class Usuario extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('estado_idestado, username, password_2, nombres, apellidos, sexo', 'required'),
-			array('estado_idestado', 'length', 'max'=>10),
+			array('tipo_usuario_idtipo_usuario, estado_idestado, username, password_2, nombres, apellidos, sexo', 'required'),
+			array('departamento_iddepartamento, tipo_usuario_idtipo_usuario, estado_idestado', 'length', 'max'=>10),
 			array('username', 'length', 'max'=>30),
 			array('password_2', 'length', 'max'=>250),
 			array('nombres, apellidos', 'length', 'max'=>150),
@@ -40,7 +40,7 @@ class Usuario extends CActiveRecord
 			array('last_login', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idusuario, estado_idestado, username, password_2, nombres, apellidos, sexo, last_login', 'safe', 'on'=>'search'),
+			array('idusuario, departamento_iddepartamento, tipo_usuario_idtipo_usuario, estado_idestado, username, password_2, nombres, apellidos, sexo, last_login', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,6 +52,8 @@ class Usuario extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'estado' => array(self::BELONGS_TO,'Estado','estado_idestado'),
+                    'tipo' => array(self::BELONGS_TO,'TipoUsuario','tipo_usuario_idtipo_usuario'),
 		);
 	}
 
@@ -62,9 +64,11 @@ class Usuario extends CActiveRecord
 	{
 		return array(
 			'idusuario' => 'Idusuario',
-			'estado_idestado' => 'Estado Idestado',
+			'departamento_iddepartamento' => 'Departamento',
+			'tipo_usuario_idtipo_usuario' => 'Tipo Usuario',
+			'estado_idestado' => 'Estado',
 			'username' => 'Username',
-			'password_2' => 'Password 2',
+			'password_2' => 'Password',
 			'nombres' => 'Nombres',
 			'apellidos' => 'Apellidos',
 			'sexo' => 'Sexo',
@@ -91,6 +95,8 @@ class Usuario extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('idusuario',$this->idusuario,true);
+		$criteria->compare('departamento_iddepartamento',$this->departamento_iddepartamento,true);
+		$criteria->compare('tipo_usuario_idtipo_usuario',$this->tipo_usuario_idtipo_usuario,true);
 		$criteria->compare('estado_idestado',$this->estado_idestado,true);
 		$criteria->compare('username',$this->username,true);
 		$criteria->compare('password_2',$this->password_2,true);
@@ -122,4 +128,79 @@ class Usuario extends CActiveRecord
         public function hashPassword($password){
             return md5($password);
         }
+        
+        public static function getGenero($key=null){
+            if($key!==null)
+                return self::$generos[$key];
+            return self::$generos;
+        }
+        
+        public static function assign($item, $id){
+            if(Yii::app()->authManager->checkAccess($item, $id))
+                Yii::app()->authManager->revoke($item, $id);
+            else
+                Yii::app()->authManager->assign($item, $id);
+        }
+        
+        public static function revokeAll($id){
+            $auth = Yii::app()->authManager;
+            
+            $items = $auth->getRoles($id);
+            foreach ($items as $item) {
+                $auth->revoke($item->name, $id);
+                Yii::app()->authManager->save();
+            }
+            
+            $items = $auth->getTasks($id);
+            foreach ($items as $item) {
+                $auth->revoke($item->name, $id);
+                Yii::app()->authManager->save();
+            }
+            
+            $items = $auth->getOperations($id);
+            foreach ($items as $item) {
+                $auth->revoke($item->name, $id);
+                Yii::app()->authManager->save();
+            }
+        }
+        
+        protected function beforeSave() {
+            if ($this->isNewRecord)
+                $this->password_2 = $this->hashPassword($this->password_2);
+            return parent::beforeSave();
+        }
+        
+        protected function afterSave(){
+            parent::afterSave();
+            
+            $this->revokeAll($this->idusuario);
+            
+            switch ($this->tipo_usuario_idtipo_usuario) {
+                case 1:
+                    $this->assign('Zeus', $this->idusuario);
+                    break;
+                case 2:
+                    $departamento = Departamento::model()->findAll();
+                    foreach($departamento as $data){
+                        $this->assign('oficial_'.$data->nombre, $this->idusuario);
+                    }
+                    break;
+                case 3:
+                    $departamento = Departamento::model()->findAll();
+                    foreach($departamento as $data){
+                        $this->assign('oficial_'.$data->nombre, $this->idusuario);
+                    }
+                    break;
+                case 4:
+                    $departamento = Departamento::model()->findByPk($this->departamento_iddepartamento);
+                    $this->assign('oficial_'.$departamento->nombre, $this->idusuario);
+                    break;
+                case 5:
+                    $departamento = Departamento::model()->findByPk($this->departamento_iddepartamento);
+                    $this->assign('secretaria_'.$departamento->nombre, $this->idusuario);
+                    break;
+            }
+           
+        }
+
 }

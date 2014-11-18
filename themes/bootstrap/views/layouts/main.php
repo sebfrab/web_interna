@@ -20,7 +20,6 @@
             </style>
         <![endif]-->
         
-        
         <!-- Owl Carousel Assets -->
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/owl-carousel/owl.carousel.css" rel="stylesheet" />
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/owl-carousel/owl.theme.css" rel="stylesheet" />
@@ -32,13 +31,59 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
     <body>
-        
+        <?php
+        $auth=Yii::app()->authManager;
+            /*
+            $auth=Yii::app()->authManager;
+            $Criteria = new CDbCriteria();
+            $Criteria->with=array(
+                    'categoria',
+                    'categoria.subcategoria',
+            );
+            $zeus = $auth->createRole('Zeus');
+            $jerarquia = Departamento::model()->findAll($Criteria);
+            foreach($jerarquia as $departamento){
+                $role = $auth->createRole('secretaria_'.$departamento->nombre);
+                $role2 = $auth->createRole('oficial_'.$departamento->nombre);
+                echo $departamento->nombre;
+                echo "<br/>";
+                foreach ($departamento->categoria as $categoria){
+                    $task = $auth->createTask('mantencion_'.$departamento->nombre.'_'.$categoria->nombre);
+                    $task2 = $auth->createTask('ver_'.$departamento->nombre.'_'.$categoria->nombre);
+                    
+                    $role->addChild('mantencion_'.$departamento->nombre.'_'.$categoria->nombre);
+                    $role2->addChild('ver_'.$departamento->nombre.'_'.$categoria->nombre);
+                    
+                    $zeus->addChild('mantencion_'.$departamento->nombre.'_'.$categoria->nombre);
+                    $zeus->addChild('ver_'.$departamento->nombre.'_'.$categoria->nombre);
+                    echo $categoria->nombre;
+                    echo "<br/>";
+                    foreach($categoria->subcategoria as $subcategoria){
+                        $auth->createOperation('create_'.$categoria->nombre.'_'.$subcategoria->nombre);
+                        $auth->createOperation('delete_'.$categoria->nombre.'_'.$subcategoria->nombre);
+                        $auth->createOperation('view_'.$categoria->nombre.'_'.$subcategoria->nombre);
+                        
+                        $task->addChild('create_'.$categoria->nombre.'_'.$subcategoria->nombre);
+                        $task->addChild('delete_'.$categoria->nombre.'_'.$subcategoria->nombre);
+                        
+                        $task->addChild('view_'.$categoria->nombre.'_'.$subcategoria->nombre);
+                        $task2->addChild('view_'.$categoria->nombre.'_'.$subcategoria->nombre);
+                        
+                        echo $subcategoria->nombre;
+                        echo "<br/>";
+                    }
+                    echo "<br/>";
+                }
+                echo "<br/>";
+                echo "<br/>";
+            }
+            */
+        ?>
         <header>
             <nav role="navigation">
                 <div class="container-fluid">
                     <div class="row">
                         <img class="col-lg-5 col-md-6 col-sm-8 hidden-xs" src="<?php echo Yii::app()->request->baseUrl; ?>/images/cabecera_EN.png" />
-                        
                     </div>
                 </div>
                 
@@ -65,9 +110,8 @@
                                     'items'=>array(
                                         array('label'=>'<span class="glyphicon glyphicon-home"></span>', 'url'=>array('/site/index')),
                                         array('label'=>'INFORMACIÓN', 'url'=>array('/site/support')),
-                                        array('label'=>'TABLA VIRTUAL', 'url'=>array('http://172.18.21.25/tablavirtual/principal.asp')),
+                                        array('label'=>'TABLA VIRTUAL', 'url'=>'http://172.18.21.25/tablavirtual/principal.asp'),
                                     ),'encodeLabel' => false,
-                                    
                                    )); 
                                 ?>
                                 
@@ -80,6 +124,18 @@
                                     ),
                                     'items'=>array(
                                         array('label'=>'<span class="glyphicon glyphicon-search"></span>', 'url'=>array('')),
+                                        array('label'=>'<span class="glyphicon glyphicon-cog"></span> panel <b class="caret"></b>', 'url'=>'#', 
+                                                    'linkOptions'=>array(
+                                                        'class'=>'dropdown-toggle',
+                                                        'data-toggle'=>'dropdown',
+                                                    ),
+                                                    'items'=>array(
+                                                        array('label'=>'Departamento', 'url'=>array('/departamento'),'visible'=>$auth->checkAccess('Zeus',Yii::app()->user->id)),
+                                                        array('label'=>'Categoria', 'url'=>array('/categoria'),'visible'=>$auth->checkAccess('Zeus',Yii::app()->user->id)),
+                                                        array('label'=>'Subcategoria', 'url'=>array('/subcategoria'),'visible'=>$auth->checkAccess('Zeus',Yii::app()->user->id)),
+                                                        array('label'=>'Usuarios', 'url'=>array('/usuario'),'visible'=>$auth->checkAccess('Zeus',Yii::app()->user->id)),
+                                                     ),
+                                               'visible'=>$auth->checkAccess('Zeus',Yii::app()->user->id)),
                                         array('label'=>'SALIR ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
                                         array('label'=>'INGRESAR', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                                     ),'encodeLabel' => false,
@@ -123,19 +179,15 @@
         
         <footer>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        
-                    </div>
-                    
-                    <div class="col-lg-12" style="background-color: #001223; margin-top: 150px;">
+                <div class="row">                    
+                    <div class="col-lg-12" style="background-color: #001223; margin-top: 10px;">
                         <div id="owl-demo" class="owl-carousel owl-theme">
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/armada.png"/></a></div>
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/apolinav.png"/></a></div>
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/escuela-naval.png"/></a></div>
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ministerio-de-defensa.jpg"/></a></div>
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/esmeralda.png"/></a></div>
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/escuela-grumetes.png"/></a></div>
+                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/armada.png"/><span style="display: block; color: #fff;">Armada</span></a></div>
+                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/apolinav.png"/><span style="display: block; color: #fff;">Apolinav</span></a></div>
+                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/escuela-naval.png"/><span style="display: block; color: #fff;">Escuela Naval</span></a></div>
+                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ministerio-de-defensa.jpg"/><span style="display: block; color: #fff;">M. Defensa</span></a></div>
+                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/esmeralda.png"/><span style="display: block; color: #fff;">Esmeralda</span></a></div>
+                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/escuela-grumetes.png"/><span style="display: block; color: #fff;">Escuela de Grumetes</span></a></div>
                         </div>
                     </div>
                     <div class="col-lg-12" style="margin-top: 150px;">
@@ -156,12 +208,18 @@
             
             $(document).ready(function() {
                $("#owl-demo").owlCarousel({
-                    navigation : false
+                    navigation : false,
+                    //Basic Speeds
+                    slideSpeed : 200,
+                    paginationSpeed : 800,
+                    rewindSpeed : 1000,
+
+                    //Autoplay
+                    autoPlay : true,
+                    stopOnHover : true,
+                    autoHeight : false
                });
-               
-               $("#owl-demo2").owlCarousel({
-                    navigation : false
-               });
+
                
                $("#sliderA").excoloSlider();
             });

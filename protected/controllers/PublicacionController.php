@@ -28,10 +28,15 @@ class PublicacionController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','create','update','admin','delete', 'download'),
+				'actions'=>array('view', 'download'),
 				'users'=>array('*'),
 			),
+                        array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('index','create','update','admin','delete'),
+				'users'=>array('@'),
+			),
 			array('deny',  // deny all users
+                                'actions'=>array('update'),
 				'users'=>array('*'),
 			),
 		);
@@ -54,6 +59,12 @@ class PublicacionController extends Controller
 	 */
 	public function actionCreate($id)
 	{
+            
+                $subcategoria = Subcategoria::model()->findByPk($id);
+                if(!Yii::app()->user->checkAccess('create_'.$subcategoria->categoria->nombre.'_'.$subcategoria->nombre)){
+                    throw new CHttpException(403,"Usted no se encuentra autorizado a realizar esta acción.");
+                }
+         
 		$model=new Publicacion;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -62,6 +73,15 @@ class PublicacionController extends Controller
 		if(isset($_POST['Publicacion']))
 		{
 			$model->attributes=$_POST['Publicacion'];
+                        
+                        if($model->extension==""){
+                            $this->render('create',array(
+                                    'model'=>$model,
+                                    'subcategoria'=>$id
+                            ));
+                            return 0;
+                        }
+                        
                         $model->extension=CUploadedFile::getInstance($model,'extension');
                         $ext = $model->extension->getExtensionName();
                         $model->usuario_idusuario = Yii::app()->user->id;
@@ -158,6 +178,12 @@ class PublicacionController extends Controller
 
           public function actionDownload($id){
             $model = Publicacion::model()->findByPk($id);
+            if($model->subcategoria->privada){
+                if(!Yii::app()->user->checkAccess('view_'.$model->subcategoria->categoria->nombre.'_'.$model->subcategoria->nombre)){
+                    throw new CHttpException(403,"Usted no se encuentra autorizado a realizar esta acción.");
+                }
+            }
+            
             $path = Yii::getPathOfAlias('webroot')."/publicaciones/".$model->idpublicacion.$model->extension;
             $this->downloadFile($path, $model);
           }
