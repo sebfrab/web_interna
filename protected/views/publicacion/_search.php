@@ -4,32 +4,45 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="wide form">
-
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'action'=>Yii::app()->createUrl($this->route),
 	'method'=>'get',
+        'htmlOptions'=>array(
+            'class'=>'form-inline',
+        ),
 )); ?>
+    
+<div class="form-group">
+    <?php echo $form->textField($model,'nombre',
+            array('maxlength'=>100, 'class'=>'form-control', 'placeholder'=>'Publicación')) 
+    ?>
+    <?php
+        $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+            'model' => $model,
+            'attribute' => 'create_2',
+            'htmlOptions' => array(
+                'maxlength' => '10',    // textField maxlength
+                'class'=>'form-control',
+                'placeholder'=>'dd-mm-yyyy',
+            ),
+            'options' => array(
+                'dateFormat' => 'dd-mm-yy',
+                'showOtherMonths' => true,
+                'selectOtherMonths' => true,
+                'language'=>'es',
+                'changeMonth' => true,
+                'changeYear' => true,
+                'showAnim'=>'drop',//'slide','fold','slideDown','fadeIn','blind','bounce','clip','drop'
+            ),
+            ));
+    ?>
+    <?php echo $form->dropDownList($model,'subcategoria_idsubcategoria',  
+        Subcategoria::getListSubCategoria($subcategoria),array('empty'=>'Seleccione SubCategoria', 'class'=>'form-control')) 
+    ?>
+</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'idpublicacion'); ?>
-		<?php echo $form->textField($model,'idpublicacion',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'subcategoria_idsubcategoria'); ?>
-		<?php echo $form->textField($model,'subcategoria_idsubcategoria',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>100)); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
-	</div>
+<div class="form-group">
+    <?php echo CHtml::submitButton('Search',array('class'=>'btn btn-primary')); ?>
+</div>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- search-form -->

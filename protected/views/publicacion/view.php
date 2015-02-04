@@ -1,27 +1,7 @@
-<?php
-/* @var $this PublicacionController */
-/* @var $model Publicacion */
+<div id="prizm-cloud-container">
+    <a data-doc-link="http://www.accusoft.com/docs/prizm-cloud-flash-vs-html5.pdf" class="doc-link"></a>
+    <div class="doc-link" data-doc-link="<?php echo Yii::app()->request->baseUrl; ?>/publicaciones/1.pdf" ></div>
+</div>
 
-$this->breadcrumbs=array(
-	'Publicacions'=>array('index'),
-	$model->idpublicacion,
-);
 
-$this->menu=array(
-	array('label'=>'Nueva Publicación', 'url'=>array('create')),
-	array('label'=>'Actualizar Publicación', 'url'=>array('update', 'id'=>$model->idpublicacion)),
-	array('label'=>'Eliminar Publicación', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idpublicacion),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Mantenedor Publicaciones', 'url'=>array('admin')),
-);
-?>
 
-<h1>View Publicacion #<?php echo $model->idpublicacion; ?></h1>
-
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'idpublicacion',
-		'subcategoria_idsubcategoria',
-		'nombre',
-	),
-)); ?>

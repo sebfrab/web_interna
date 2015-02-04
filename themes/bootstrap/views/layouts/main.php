@@ -16,7 +16,12 @@
         
         <!--[if IE]>
             <style type="text/css">
-              @import ("/css/ie.css");
+              .header{
+                background-color: #0d141c;
+              }
+              .footer{
+                background-color: #00223f;
+              }
             </style>
         <![endif]-->
         
@@ -80,6 +85,7 @@
             */
         ?>
         <header>
+            <div class="header">
             <nav role="navigation">
                 <div class="container-fluid">
                     <div class="row">
@@ -110,7 +116,7 @@
                                     'items'=>array(
                                         array('label'=>'<span class="glyphicon glyphicon-home"></span>', 'url'=>array('/site/index')),
                                         array('label'=>'INFORMACIÓN', 'url'=>array('/site/support')),
-                                        array('label'=>'TABLA VIRTUAL', 'url'=>'http://172.18.21.25/tablavirtual/principal.asp'),
+                                        array('label'=>'TABLA VIRTUAL', 'url'=>'http://172.18.21.25/tablavirtual/principal.asp', 'linkOptions' => array('target'=>'_blank')),
                                     ),'encodeLabel' => false,
                                    )); 
                                 ?>
@@ -123,7 +129,7 @@
                                         'class'=>'dropdown-menu', 
                                     ),
                                     'items'=>array(
-                                        array('label'=>'<span class="glyphicon glyphicon-search"></span>', 'url'=>array('')),
+                                        array('label'=>'<span class="glyphicon glyphicon-search"></span>', 'url'=>array('/publicacion/search')),
                                         array('label'=>'<span class="glyphicon glyphicon-cog"></span> panel <b class="caret"></b>', 'url'=>'#', 
                                                     'linkOptions'=>array(
                                                         'class'=>'dropdown-toggle',
@@ -147,6 +153,7 @@
                     </div>
                 </div>
             </nav>
+            </div>
         </header>
         
         <!--<div class="container">
@@ -178,30 +185,21 @@
         </div>
         
         <footer>
+            <div class="footer">
             <div class="container-fluid">
                 <div class="row">                    
-                    <div class="col-lg-12" style="background-color: #001223; margin-top: 10px;">
-                        <div id="owl-demo" class="owl-carousel owl-theme">
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/armada.png"/><span style="display: block; color: #fff;">Armada</span></a></div>
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/apolinav.png"/><span style="display: block; color: #fff;">Apolinav</span></a></div>
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/escuela-naval.png"/><span style="display: block; color: #fff;">Escuela Naval</span></a></div>
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ministerio-de-defensa.jpg"/><span style="display: block; color: #fff;">M. Defensa</span></a></div>
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/esmeralda.png"/><span style="display: block; color: #fff;">Esmeralda</span></a></div>
-                            <div class="item"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/escuela-grumetes.png"/><span style="display: block; color: #fff;">Escuela de Grumetes</span></a></div>
-                        </div>
-                    </div>
                     <div class="col-lg-12" style="margin-top: 150px;">
                         
                     </div>
-                    
                 </div>
+            </div>
             </div>
         </footer>
         
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/respond.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.excoloSlider.js"></script>
-        
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.prizmcloud.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/owl-carousel/owl.carousel.min.js"></script>
         
         <script type="text/javascript">
@@ -222,6 +220,14 @@
 
                
                $("#sliderA").excoloSlider();
+               
+                $('#prizm-cloud-container').prizmcloud({
+                    viewerheight: 400,
+                    viewerwidth: 400,
+                    type: 'flash',
+                    print_button: 'No'
+                });
+
             });
         </script>
     </body>

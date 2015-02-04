@@ -55,16 +55,20 @@ class SubcategoriaController extends Controller
                 if(isset($_GET['Publicacion'])){
 			$modelPublicacion->attributes=$_GET['Publicacion'];
                 }
+                
                 $model = $this->loadModel($id);
                 $Criteria = new CDbCriteria();
+                $Criteria->order = "t.orden ASC";
                 $Criteria->condition = "t.categoria_idcategoria = $model->categoria_idcategoria";
-                $subcategoria  = Subcategoria::model()->findAll($Criteria);
                 
+                $subcategoria  = Subcategoria::model()->findAll($Criteria);
+                $subcategoriaOption = Subcategoria::model()->findByPk($id);
                 
 		$this->render('view',array(
 			'model'=>$model,
                         'modelPublicacion'=>$modelPublicacion,
                         'subcategoria' =>$subcategoria,
+                        'option'=>$subcategoriaOption
 		));
 	}
 

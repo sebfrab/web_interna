@@ -99,6 +99,9 @@ class Subcategoria extends CActiveRecord
 		$criteria->compare('privada',$this->privada);
 
 		return new CActiveDataProvider($this, array(
+                        'pagination'=>array(
+                                'pageSize'=>20,
+                        ),
 			'criteria'=>$criteria,
 		));
 	}

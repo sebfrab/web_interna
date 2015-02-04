@@ -32,6 +32,12 @@
 		<?php echo $form->textField($model,'orden',array('size'=>60,'maxlength'=>2, 'class'=>'form-control')) ?>
 		<?php echo $form->error($model,'orden',array('class'=>'alert alert-danger')); ?>
 	</div>
+    
+        <div class="form-group">
+		<?php echo $form->labelEx($model,'visible',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'visible',array('size'=>60,'maxlength'=>2, 'class'=>'form-control')) ?>
+		<?php echo $form->error($model,'visible',array('class'=>'alert alert-danger')); ?>
+	</div>
 
 	<div class="form-group">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Ingresar' : 'Guardar',array('class'=>'btn btn-primary')); ?>

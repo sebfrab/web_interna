@@ -32,7 +32,7 @@ class PublicacionController extends Controller
 				'users'=>array('*'),
 			),
                         array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','create','update','admin','delete'),
+				'actions'=>array('index','create','update','admin','delete', 'search'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -74,7 +74,10 @@ class PublicacionController extends Controller
 		{
 			$model->attributes=$_POST['Publicacion'];
                         
-                        if($model->extension==""){
+                        //print_r($_POST['Publicacion']);
+                        //exit();
+                        
+                        if(!CUploadedFile::getInstance($model,'extension')){
                             $this->render('create',array(
                                     'model'=>$model,
                                     'subcategoria'=>$id
@@ -163,6 +166,18 @@ class PublicacionController extends Controller
 			'model'=>$model,
 		));
 	}
+        
+        public function actionSearch(){
+                $this->layout='//layouts/column1';
+                $model=new Publicacion('search2');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Publicacion']))
+			$model->attributes=$_GET['Publicacion'];
+
+		$this->render('search',array(
+			'model'=>$model,
+		));
+        }
         
         public function downloadFile($fullpath, $model){
             if(!empty($fullpath)){ 
