@@ -28,8 +28,12 @@ class SubcategoriaController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('view'),
+				'actions'=>array('view','resetPermisos'),
 				'users'=>array('*'),
+			),
+                        array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('resetPermisos'),
+				'users'=>array('@'),
 			),
                         array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','create','update','admin','delete'),
@@ -150,6 +154,14 @@ class SubcategoriaController extends Controller
             }*/
             $this->redirect(array('admin'));
 	}
+        
+        public function actionResetPermisos(){
+            $command = Yii::app()->db->createCommand();
+            $command->truncateTable('authitemchild');
+            $command->truncateTable('authitem');
+            
+            $this->render('resetPermisos');
+        }
 
 	/**
 	 * Manages all models.

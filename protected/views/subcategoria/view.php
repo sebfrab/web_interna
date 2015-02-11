@@ -163,7 +163,7 @@ if($option->idsubcategoria==11){
                 array(
                         'class'=>'CButtonColumn',
                         'htmlOptions'=>array('width'=>'70px'),
-                        'template'=>'{view}{delete}',
+                        'template'=>'{view}{down}{delete}',
                         'buttons'=>array(
                             'view' => array
                             (
@@ -177,6 +177,18 @@ if($option->idsubcategoria==11){
                                 'imageUrl'=>Yii::app()->request->baseUrl.'/images/iconos/eliminar.png',
                                 'url' => 'Yii::app()->createUrl("publicacion/delete",array("id"=>$data->idpublicacion))',
                                 'visible'=>'Yii::app()->user->checkAccess("delete_'.$option->categoria->nombre.'_'.$option->nombre.'")',
+                            ),
+                            'down' => array
+                            (
+                                'label'=>'[-]',
+                                
+                                'options'=>array('title'=>'$data->idpublicacion'),
+                                'imageUrl'=>Yii::app()->request->baseUrl.'/images/iconos/eliminar.png',
+                                'url' =>'',
+                                'click' => 'function() { 
+                                    alert( $(this).attr("title")); 
+                                    return false;
+                                    }',
                             ),
                         ),
                 ),

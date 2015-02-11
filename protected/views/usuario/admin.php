@@ -22,6 +22,7 @@ $this->menu=array(
 	'columns'=>array(
 		'idusuario',
 		'tipo_usuario_idtipo_usuario',
+                'departamento_iddepartamento',
 		'estado_idestado',
 		'username',
 		'nombres',

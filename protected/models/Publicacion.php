@@ -111,10 +111,12 @@ class Publicacion extends CActiveRecord
                 $criteria->compare('subcategoria_idsubcategoria',$this->subcategoria_idsubcategoria,false);
                 //$criteria->condition= "subcategoria_idsubcategoria = $this->subcategoria_idsubcategoria";
                 
-
 		return new CActiveDataProvider($this, array(
                         'pagination'=>array(
                                 'pageSize'=>20,
+                        ),
+                        'sort'=>array(
+                            'defaultOrder'=>'create_2 DESC',
                         ),
 			'criteria'=>$criteria,
 		));
@@ -174,6 +176,9 @@ class Publicacion extends CActiveRecord
 		return new CActiveDataProvider($this, array(
                         'pagination'=>array(
                                 'pageSize'=>20,
+                        ),
+                        'sort'=>array(
+                            'defaultOrder'=>'fecha_vigencia_ini DESC',
                         ),
 			'criteria'=>$criteria,
 		));

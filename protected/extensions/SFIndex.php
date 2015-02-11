@@ -104,7 +104,7 @@ class SFIndex extends CWidget{
     public function slider(){
         echo "<div class=\"col-lg-12 hidden-sm hidden-xs\">";
         echo "<div id=\"sliderA\" class=\"slider\">";
-        echo "<img src=\"".Yii::app()->request->baseUrl."/images/imagen1.jpg\" />";
+        //echo "<img src=\"".Yii::app()->request->baseUrl."/images/imagen1.jpg\" />";
         echo "<img src=\"".Yii::app()->request->baseUrl."/images/imagen2.jpg\" />";
         echo "<img src=\"".Yii::app()->request->baseUrl."/images/imagen3.jpg\" />";
         echo "<img src=\"".Yii::app()->request->baseUrl."/images/imagen4.jpg\" />";

@@ -48,7 +48,7 @@
                         'options'=>array(
                             'dateFormat' => 'yy-mm-dd',     // format of "2012-12-25"
                             'changeMonth'=>true,
-                            'minDate'=>0,
+                            //'minDate'=>0, fecha selección minima la actual
                             'onSelect'=> 'js:function( selectedDate ) {
                                 $( "#' . CHtml::activeId($model, 'fecha_vigencia_fin') . '" ).datepicker("option", "minDate", selectedDate); //set the end date cjuidatepiker minDate and its working fine
                                 $( "#' . CHtml::activeId($model, 'fecha_vigencia_fin') . '" ).datepicker("setDate", selectedDate);

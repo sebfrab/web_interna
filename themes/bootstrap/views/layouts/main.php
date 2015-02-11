@@ -2,6 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="shortcut Icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/iconos/pedidosOnline.ico"/>
         <meta name="language" content="es" />
@@ -34,6 +35,7 @@
         <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
         
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        
 </head>
     <body>
         <?php
@@ -115,8 +117,8 @@
                                     ),
                                     'items'=>array(
                                         array('label'=>'<span class="glyphicon glyphicon-home"></span>', 'url'=>array('/site/index')),
-                                        array('label'=>'INFORMACIÓN', 'url'=>array('/site/support')),
                                         array('label'=>'TABLA VIRTUAL', 'url'=>'http://172.18.21.25/tablavirtual/principal.asp', 'linkOptions' => array('target'=>'_blank')),
+                                        array('label'=>'MANUAL', 'url'=>'http://172.18.21.211/Manual.pdf', 'linkOptions' => array('target'=>'_blank')),
                                     ),'encodeLabel' => false,
                                    )); 
                                 ?>

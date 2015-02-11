@@ -88,6 +88,11 @@ class SiteController extends Controller
 		}
 		$this->render('contact',array('model'=>$model));
 	}
+        
+        public function actionManual()
+	{
+		$this->render('manual');
+	}       
 
 	/**
 	 * Displays the login page
