@@ -202,8 +202,6 @@
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/respond.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.excoloSlider.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.prizmcloud.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/owl-carousel/owl.carousel.min.js"></script>
-        
         <script type="text/javascript">
             
             $(document).ready(function() {

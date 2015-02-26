@@ -181,14 +181,11 @@ if($option->idsubcategoria==11){
                             'down' => array
                             (
                                 'label'=>'[-]',
-                                
-                                'options'=>array('title'=>'$data->idpublicacion'),
-                                'imageUrl'=>Yii::app()->request->baseUrl.'/images/iconos/eliminar.png',
-                                'url' =>'',
-                                'click' => 'function() { 
-                                    alert( $(this).attr("title")); 
-                                    return false;
-                                    }',
+                                'url' => 'Yii::app()->createUrl("publicacion/download",array("id"=>$data->idpublicacion))',
+                                'click' => 'js:function() { 
+                                    event.preventDefault();
+                                    alert($(this).attr("href"));
+                                }',
                             ),
                         ),
                 ),
